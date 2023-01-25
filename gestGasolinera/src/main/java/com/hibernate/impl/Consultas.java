@@ -61,7 +61,7 @@ public class Consultas{
 		}
 		
 		@Transactional
-		public void borrarCombustible(ControlCamiones controlCamiones) {
-			cci.eliminarCombustible(controlCamiones);
+		public void eliminarCombustible() {
+			cci.eliminarCombustible();
 		}
 }

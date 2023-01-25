@@ -67,7 +67,7 @@ public class Controller {
 				break;
 			case 3:
 				System.out.println("Has escogido la opción de ver todos los repostajes");
-				System.out.print("Repostaje: " + consulta.buscarTodos());
+				System.out.println(consulta.buscarTodos());
 				break;
 			case 4:
 				List<PagosRepostaje> repostajes = new ArrayList<PagosRepostaje>();
@@ -85,11 +85,13 @@ public class Controller {
 				consulta.insertarELCombustible(controlCamiones);
 				break;
 			case 6:
+				System.out.println("Has escogido la opción de eliminar el ultimo deposito");
+				consulta.eliminarCombustible();
 
 				break;
 			case 7:
 				System.out.println("Has escogido la opción de ver todos los llenados de depósito");
-				System.out.print("Llenado: " + consulta.buscarCamiones());
+				System.out.println( consulta.buscarCamiones());
 				break;
 			default:
 

@@ -69,9 +69,9 @@ public class ControlCamiones {
 	
 	@Override
 	public String toString() {
-		return "Control de camiones: id_repostaje=" + id_repostaje + "// md_uuid=" + md_uuid + "// md_date=" + md_date.getTime()
-				+ "// litros_combustible=" + litros_combustible + "// tipo_combustible=" + tipo_combustible + "// importe="
-				+ importe + "]";
+		return "Control de camiones:\n id_repostaje=" + id_repostaje + "\n md_uuid=" + md_uuid + "\n md_date=" + md_date.getTime()
+				+ "\n litros_combustible=" + litros_combustible + "\n tipo_combustible=" + tipo_combustible + "\n importe="
+				+ importe + "\n\n";
 	}
 	
 

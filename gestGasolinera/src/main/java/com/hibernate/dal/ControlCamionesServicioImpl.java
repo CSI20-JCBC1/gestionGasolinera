@@ -20,14 +20,17 @@ public class ControlCamionesServicioImpl implements ControlCamionesServicio{
 		emCamiones.close();
 	}
 	
-	public void eliminarCombustible(ControlCamiones controlCamiones){
-		List<ControlCamiones> lista= new ArrayList<ControlCamiones>();
-		lista=emCamiones.createQuery("SELECT combustible FROM ControlCamiones combustible").getResultList();
-		int ultimoReg=lista.size();
+	public void eliminarCombustible(){
+		List<ControlCamiones> listaCamiones = buscarCamiones();
+		emCamiones.remove(listaCamiones.get(listaCamiones.size()-1));
+		emCamiones.clear();
+		emCamiones.close();
 	}
 
 	public List<ControlCamiones> buscarCamiones() {
 		return emCamiones.createQuery("SELECT combustible FROM ControlCamiones combustible").getResultList();
 	}
+	
+	
 
 }

@@ -98,9 +98,9 @@ public class PagosRepostaje {
 		
 		@Override
 		public String toString() {
-			return "Datos de los repostajes: id_repostaje=" + id_repostaje + "// md_uuid=" + md_uuid + "// md_date="
-					+ md_date.getTime() + "// importe=" + importe + "// dni=" + dni + "// matricula=" + matricula + " // fch_repostaje="
-					+ fch_repostaje.getTime() + "";
+			return "Datos de los repostajes:\n id_repostaje=" + id_repostaje + "\n md_uuid=" + md_uuid + "\n md_date="
+					+ md_date.getTime() + "\n importe=" + importe + "\n dni=" + dni + "\n matricula=" + matricula + " \n fch_repostaje="
+					+ fch_repostaje.getTime() + "\n\n";
 		}
 		
 
